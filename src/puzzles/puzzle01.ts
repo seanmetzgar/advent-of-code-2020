@@ -1,10 +1,9 @@
-const dataSet = require('../puzzle1-dataSet');
+export default (dataSet: Array<number>) => {
+  let calculated = {};
 
-const puzzle01 = async () => {
-  let calculated = false;
-  dataSet.forEach((value, index) => {
-    if (calculated === false) {
-      dataSet.forEach((value2, index2) => {
+  dataSet.forEach((value: number, index: number) => {
+    if (Object.entries(calculated).length === 0) {
+      dataSet.forEach((value2: number, index2: number) => {
         if (index2 !== index) {
           if (value + value2 === 2020) {
             calculated = {
@@ -13,13 +12,13 @@ const puzzle01 = async () => {
               sum: value + value2,
               multiplied: value * value2,
             };
+
+            return;
           }
         }
       });
     }
   });
 
-  console.log(calculated);
+  return calculated;
 };
-
-puzzle01();
