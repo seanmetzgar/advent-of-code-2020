@@ -1,6 +1,6 @@
-const dataSet = require('./dataSet');
+const dataSet = require('../puzzle1-dataSet');
 
-const main = async () => {
+const puzzle01 = async () => {
   let calculated = false;
   dataSet.forEach((value, index) => {
     if (calculated === false) {
@@ -22,4 +22,4 @@ const main = async () => {
   console.log(calculated);
 };
 
-main();
+puzzle01();
