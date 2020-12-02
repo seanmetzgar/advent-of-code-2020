@@ -1,7 +1,9 @@
-import puzzle01 from "./puzzle01.js";
-import puzzle02 from "./puzzle02.js";
+import day01_1 from "./day01-1";
+import day01_2 from "./day01-2";
+import day02 from "./day02";
 
 export default {
-  puzzle01: puzzle01,
-  puzzle02: puzzle02,
+  day01_1: day01_1,
+  day01_2: day01_2,
+  day02: day02
 };
