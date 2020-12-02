@@ -1,6 +1,6 @@
-export default (dataSet: Array<number>) => {
+export default (dataSet: number[]) => {
   let calculated: object | null = null;
-  
+
   dataSet.forEach((value: number, index: number) => {
     if (calculated === null) {
       dataSet.forEach((value2: number, index2: number) => {

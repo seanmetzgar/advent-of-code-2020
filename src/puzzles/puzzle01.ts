@@ -1,4 +1,4 @@
-export default (dataSet: Array<number>) => {
+export default (dataSet: number[]) => {
   let calculated: object | null = null;
 
   dataSet.forEach((value: number, index: number) => {
