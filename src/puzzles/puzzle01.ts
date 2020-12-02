@@ -1,8 +1,8 @@
 export default (dataSet: Array<number>) => {
-  let calculated = {};
+  let calculated: object | null = null;
 
   dataSet.forEach((value: number, index: number) => {
-    if (Object.entries(calculated).length === 0) {
+    if (calculated === null) {
       dataSet.forEach((value2: number, index2: number) => {
         if (index2 !== index) {
           if (value + value2 === 2020) {

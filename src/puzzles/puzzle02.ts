@@ -1,9 +1,10 @@
 export default (dataSet: Array<number>) => {
-  let calculated = {};
+  let calculated: object | null = null;
+  
   dataSet.forEach((value: number, index: number) => {
-    if (Object.entries(calculated).length === 0) {
+    if (calculated === null) {
       dataSet.forEach((value2: number, index2: number) => {
-        if (Object.entries(calculated).length === 0 && index2 !== index) {
+        if (calculated === null && index2 !== index) {
           dataSet.forEach((value3: number, index3: number) => {
             if (index3 !== index2 && index3 !== index) {
               if (value + value2 + value3 === 2020) {
