@@ -1,9 +1,12 @@
-import day01 from "./day01";
-import day02 from "./day02";
-import day03 from "./day03";
+import fs from 'fs';
+const files: string[] = fs.readdirSync(__dirname);
+const exporter: any = {};
 
-export default {
-  day01: day01,
-  day02: day02,
-  day03: day03,
-};
+files.forEach((file: string) => {
+  if (file.endsWith('.js') && file !== 'index.js') {
+    file = file.replace('.js', '');
+    exporter[file] = require(`./${file}`).default;
+  }
+})
+
+export default exporter;
