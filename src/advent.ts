@@ -10,3 +10,8 @@ const day02 = Puzzles.day02(Data.day02);
 console.log("Day 2 - Puzzle 1:", day02.valid_1);
 console.log("Day 2 - Puzzle 2:", day02.valid_2);
 // console.log("Day 2 - Passwords:", day02.passwords);
+
+const day03 = Puzzles.day03(Data.day03);
+console.log("Day 3 - Puzzle 1:", day03.puzzle1);
+console.log("Day 3 - Puzzle 2:", day03.puzzle2);
+// console.log("Day 3 - Impacts:", day03.impacts);
