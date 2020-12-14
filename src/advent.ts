@@ -31,3 +31,9 @@ const day04 = Puzzles.day04(Data.day04);
 console.log("Day 4 - Puzzle 1:", day04.haveRequired);
 console.log("Day 4 - Puzzle 2:", day04.validated);
 console.groupEnd(); lb();
+
+console.group("Day 5");
+const day05 = Puzzles.day05(Data.day05);
+console.log("Day 5 - Puzzle 1:", day05.highestSeatID);
+console.log("Day 5 - Puzzle 2:", day05.missingSeatID);
+console.groupEnd(); lb();
