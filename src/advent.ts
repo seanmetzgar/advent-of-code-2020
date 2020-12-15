@@ -1,7 +1,7 @@
 import Puzzles from "./puzzles";
 import Data from "./data";
 
-const lb = ()=> {
+const lb = () => {
   console.log('\n');
 }
 
@@ -36,4 +36,10 @@ console.group("Day 5");
 const day05 = Puzzles.day05(Data.day05);
 console.log("Day 5 - Puzzle 1:", day05.highestSeatID);
 console.log("Day 5 - Puzzle 2:", day05.missingSeatID);
+console.groupEnd(); lb();
+
+console.group("Day 6");
+const day06 = Puzzles.day06(Data.day06);
+console.log("Day 6 - Puzzle 1:", day06.yesSum);
+console.log("Day 6 - Puzzle 2:", day06.groupYesSum);
 console.groupEnd(); lb();
